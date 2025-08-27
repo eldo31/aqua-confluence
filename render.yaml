@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aqua-confluence
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 1 -b 0.0.0.0:$PORT src.main:app
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
