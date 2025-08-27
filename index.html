@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌊 Aqua Confluence Quintuple</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --ink:#e5e7eb; --muted:#94a3b8; --acc:#22c55e; --danger:#ef4444; --warn:#f59e0b; }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(135deg,#065f46,#0f766e); /* 🎨 fond changé pour différencier */
+      font-family:system-ui,-apple-system,Segoe UI,Roboto;
+      color:var(--ink)
+    }
+    .wrap{max-width:1100px;margin:24px auto;padding:0 16px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+    h1{font-size:22px;margin:0}
+    .badge{font-size:12px;padding:6px 10px;border-radius:999px;background:#0ea5e9;color:#001018}
+    .version{font-size:12px;padding:6px 10px;border-radius:999px;background:#22c55e;color:#03140a;margin-left:8px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:rgba(17,24,39,.9);backdrop-filter:blur(8px);border:1px solid #1f2937;border-radius:12px;padding:12px}
+    .card h3{font-size:14px;margin:0 0 8px;color:#cbd5e1}
+    .hint{color:var(--muted);font-size:12px}
+    input[type=file]{width:100%}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .btn{background:#1f2937;border:1px solid #334155;color:#e5e7eb;border-radius:10px;padding:10px 14px;font-weight:600;cursor:pointer}
+    .btn:hover{border-color:#475569}
+    .btn.acc{background:var(--acc);border-color:transparent;color:#03140a}
+    .btn.warn{background:var(--warn);border-color:transparent;color:#190f00}
+    .btn.danger{background:var(--danger);border-color:transparent}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label.small{font-size:12px;color:#cbd5e1;display:block;margin-bottom:4px}
+    .sl{display:flex;align-items:center;gap:8px}
+    .sl input[type=range]{flex:1}
+    .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;white-space:pre-wrap;background:#0b1220;border:1px solid #1f2937;border-radius:8px;padding:10px}
+    .pill{display:inline-flex;gap:8px;background:#0b1220;border:1px solid #1f2937;border-radius:999px;padding:6px 8px}
+    .pill button{border:none;background:transparent;color:#cbd5e1;padding:6px 10px;border-radius:999px;cursor:pointer}
+    .pill button.active{background:#10b981;color:#03140a;font-weight:700}
+    .muted{color:#94a3b8}
+    audio{width:100%}
+    .num{width:90px}
+    .num.small{width:72px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🌊 Aqua Confluence Quintuple</h1>
+      <div style="display:flex;align-items:center;gap:6px">
+        <div id="modeBadge" class="badge">Mode actif : —</div>
+        <div class="version">v0.6</div> <!-- ✅ Badge version -->
+      </div>
+    </header>
+
+    <!-- le reste de ton interface reste inchangé -->
+    <!-- … exactement comme dans ton fichier actuel … -->
+
+    <script src="/static/app.js?v=0.6"></script> <!-- 🔄 cache-buster -->
+  </div>
+</body>
+</html>
